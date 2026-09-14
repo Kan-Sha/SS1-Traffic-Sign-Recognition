@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-Dự án sử dụng **Deep Learning** (CNN + Transfer Learning) để nhận dạng biển báo giao thông từ ảnh và video real-time. Dự án thuộc bộ môn **Xử Lý Ảnh & Nhận Dạng (IPR)**.
+Dự án sử dụng **Deep Learning** (CNN + Transfer Learning) để nhận dạng biển báo giao thông từ ảnh và video real-time. Dự án thuộc bộ môn **Chuyên Đề 1 (SS1) **.
 
 ### Tính năng chính
 - 📸 Nhận dạng biển báo từ ảnh tĩnh (43 loại)
@@ -90,11 +90,5 @@ project_ipr/
 
 | Thành viên | Vai trò |
 |-----------|---------|
-| TV1 | Data Engineer - Thu thập & xử lý dữ liệu |
-| TV2 | ML Engineer - Thiết kế & huấn luyện model |
-| TV3 | CV Engineer - Detection & Real-time |
-| TV4 | Full-stack - Web App & Tích hợp |
-
-## License
-
-MIT License
+| TV1 | Data Engineer - Thu thập & xử lý dữ liệu<br><br>ML Engineer - Thiết kế & huấn luyện model |
+| TV2 | CV Engineer - Detection & Real-time<br><br> Full-stack - Web App & Tích hợp |
