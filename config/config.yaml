@@ -1,0 +1,73 @@
+# ============================
+# Project Configuration
+# ============================
+
+# Paths
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  data_samples: "data/samples"
+  models: "models"
+  reports: "reports/figures"
+
+# Dataset
+dataset:
+  name: "GTSRB"
+  num_classes: 43
+  image_size: 64
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  random_seed: 42
+
+# Training
+training:
+  batch_size: 64
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 7
+  min_delta: 0.001
+  optimizer: "adam"
+  scheduler: "step"
+  scheduler_step_size: 10
+  scheduler_gamma: 0.1
+
+# Model
+model:
+  type: "resnet18"  # Options: "custom_cnn", "resnet18", "resnet50"
+  pretrained: true
+  dropout: 0.5
+  freeze_backbone: false
+
+# Augmentation
+augmentation:
+  enabled: true
+  rotation_range: 15
+  width_shift: 0.1
+  height_shift: 0.1
+  brightness_range: [0.8, 1.2]
+  contrast_range: [0.8, 1.2]
+  horizontal_flip: false
+  gaussian_noise: 0.02
+
+# Detection
+detection:
+  confidence_threshold: 0.7
+  min_area: 500
+  max_area: 50000
+  colors:
+    red_lower1: [0, 70, 50]
+    red_upper1: [10, 255, 255]
+    red_lower2: [170, 70, 50]
+    red_upper2: [180, 255, 255]
+    blue_lower: [100, 70, 50]
+    blue_upper: [130, 255, 255]
+    yellow_lower: [15, 70, 50]
+    yellow_upper: [35, 255, 255]
+
+# Streamlit
+app:
+  title: "🚦 Nhận Dạng Biển Báo Giao Thông"
+  page_icon: "🚦"
+  layout: "wide"
